@@ -1,0 +1,97 @@
+<!DOCTYPE>
+<html ng-app>
+<head>
+<!--latest compiled and minified css -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<!--Optional Theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+<!-- link to css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+  <title>PhotoSnap</title>
+</head>
+<body style="background-image: url(../images/g1.jpg);">
+<!-- navbar -->
+ <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+
+
+           
+            <li role="presentation"><a href="#about ">About</a></li>
+            <li role="presentation"><a href="../index.html">Home</a></li>
+            <li role="presentation"><a href="#contact">ContactUs</a></li>
+              
+      </div>
+
+      <!-- jumbotron -->
+       <div class="jumbotron" id="about">
+       <section class="row text-center jumbotron" "jumbotron img-responsive container" "height:auto" id="pitch">
+            <h1 id="billy">PhotoSnap<br>create your Account</h1>
+            <!-- sign up table -->
+
+<div class="container" >
+
+
+
+<table class="table">
+<thead>
+  <tr>
+  <th>Username</th>
+  <th>Password</th>
+  <th>Confirm Password : </th>
+  <th>select profile photo</th>
+  </tr>
+
+  <tbody>
+   <tr>
+    <td><input class="form-control" ng-model="test" ></td>
+    <td><input class="form-control" type="password" name="password" size="25"></td>
+    <td><input class="form-control" type="password" name="password" size="25"></td>
+    </td>
+    
+       <td>
+          <td>
+        <input type="file" id="myFile">
+
+<button  class="btn btn-primary" onclick="myFunction()">Upload</button>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myFile");
+    x.disabled = false; //MAYBE TRY FALSE AS AN OPTION.  
+}
+</script>
+
+
+    </td>
+
+
+
+       </td>
+
+
+    <!--this code identifies which table or collection the user wants to remove-->
+    <td> <a href="photosnap.html" class="btn btn-primary btn-lg">SignUp</a></td>    
+    <td> <a href="../index.html" class="btn btn-primary btn-lg">Cancel</a></button></td>
+
+    </tr>
+
+
+   </tbody>
+
+
+ 
+</thead>
+</table>
+</div> 
+        </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+<script src="controllers/controller.js"></script>
+</body>
+</html> 
